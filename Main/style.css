@@ -1,0 +1,76 @@
+/* header */
+#headerContainer {
+    border: 5px solid white;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 100%;
+    max-width: 1300px;
+    background-color: #CB9DF0;
+    z-index: 100000;
+}
+
+#headImage{
+    rotate: 0deg;
+}
+
+/* main section */
+#mainSection
+{
+    border: 5px solid white;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    max-width: 1300px;
+    background-color: #CB9DF0;
+    background-color: #F0C1E1;
+}
+
+/* left section */
+
+#leftSection
+{
+    border: 5px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background-color: #FDDBBB;
+    z-index: 100000;
+}
+
+/* right section */
+
+#rightSection
+{
+    border: 5px solid white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 260px;
+    background-color: #FDDBBB;
+    z-index: 100000;
+    background-color: #FDDBBB;
+}
+
+/* footer */
+
+#footerContainer
+{
+    position: fixed;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    height: 50px;
+    width: 100%;
+    max-width: 1300px; 
+    background-color: #FFF9BF;
+    z-index: 1000;
+}
