@@ -1,76 +1,157 @@
-/* header */
-#headerContainer {
-    border: 5px solid white;
-    position: fixed;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 200px;
-    width: 100%;
-    max-width: 1300px;
-    background-color: #CB9DF0;
-    z-index: 100000;
-}
+/* pallete
 
-#headImage{
-    rotate: 0deg;
-}
+Liliowy fiolet – #D8BFD8 (Delikatny, elegancki)
+Pastelowy róż – #F4C2C2 (Ciepły akcent)
+Lawendowy błękit – #C3B1E1 (Subtelny, z chłodnym tonem)
+Miętowy turkus – #D1E7E0 (Lekki kontrast)
+Jasny beż – #F5E6DA (Neutralna baza)
 
-/* main section */
-#mainSection
+*/
+
+body 
 {
-    border: 5px solid white;
+    background-color: #F5E6DA;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar 
+{
+    position: fixed;
+    top: 0;
+    left: -290px;
+    width: 290px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    background: linear-gradient(to bottom, #C3B1E1, #D8BFD8); /* Gradient pastelowego fioletu */
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a 
+{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover 
+{
+    background-color: #575757;
+}
+
+.sidebar .close-btn 
+{
     position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#openBtn 
+{
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #C3B1E1; /* Lawendowy błękit */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Miękki cień */
+    color: #4A375A; /* Ciemny fiolet dla ikon/tekstu */
+    border: none;
+    cursor: pointer;
+}
+
+#openBtn:hover 
+{
+    background: #D8BFD8; /* Liliowy fiolet po najechaniu */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Mocniejszy cień */
+}
+
+.headerContainer
+{
+    position: absolute;
     width: 100%;
-    max-width: 1300px;
-    background-color: #CB9DF0;
-    background-color: #F0C1E1;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to right, #D8BFD8, #C3B1E1);
 }
 
-/* left section */
-
-#leftSection
+#headerImageContainer
 {
-    border: 5px solid white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 260px;
-    background-color: #FDDBBB;
-    z-index: 100000;
+    position: relative;
+    top: 25px;
+    right: 450px;
 }
 
-/* right section */
-
-#rightSection
+#headerImage
 {
-    border: 5px solid white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 260px;
-    background-color: #FDDBBB;
-    z-index: 100000;
-    background-color: #FDDBBB;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    background: linear-gradient(135deg, #D8BFD8, #F4C2C2); /* Liliowy fiolet + Pastelowy róż */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtelne cienie */
+    position: absolute;
 }
 
-/* footer */
-
-#footerContainer
+#headerImage:hover
 {
-    position: fixed;
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%);
-    height: 50px;
-    width: 100%;
-    max-width: 1300px; 
-    background-color: #FFF9BF;
-    z-index: 1000;
+    transform: scale(1.1); /* Powiększenie */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3); /* Większy cień */
+    background: linear-gradient(135deg, #C3B1E1, #D1E7E0); /* Zmiana kolorów gradientu */
+    cursor: pointer;
+}
+
+#headerTextContainer
+{
+    position: absolute;
+    bottom: 125px;
+    left: 725px;
+}
+
+#headerText
+{
+    color: #4A375A;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+#headerSubTextContainer
+{
+    position: absolute;
+    bottom: 155px;
+    left: 725px;
+}
+
+#headerSubText
+{
+    color: #4A375A;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+}
+
+.Text
+{
+    color: #4A375A;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#panelHeadText
+{
+    position: absolute;
+    left: 30px;
+}
+
+#panelSubText
+{
+    position: absolute;
+    left: 30px;
+    top: 120px;
 }

@@ -1,10 +1,10 @@
-const Image = document.getElementById('headImage');
+const Image = document.getElementById('headerImage');
 let angle = 0;
-const intervalID = setInterval(spin, 50);
+const intervalID = setInterval(spin, 10);
 
 function spin()
 {
-    angle += 60;
+    angle += 1;
     Image.style.rotate = angle + "deg";
     if (angle == 360)
     {
