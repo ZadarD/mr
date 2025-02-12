@@ -67,9 +67,9 @@ body {
 }
 
 #headerImageContainer {
-    position: relative;
-    top: 25px;
-    right: 450px;
+    position: absolute;
+    top: 45px;
+    left: 300px;
 }
 
 #headerImage {
@@ -80,6 +80,7 @@ body {
     background: linear-gradient(135deg, #D8BFD8, #F4C2C2);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.2);
     position: absolute;
+    top: -20px;
 }
 
 #headerImage:hover {
@@ -89,27 +90,12 @@ body {
     cursor: pointer;
 }
 
-#headerTextContainer {
-    position: absolute;
-    bottom: 125px;
-    left: 725px;
-}
-
 #headerText {
     color: #4A375A;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#headerSubTextContainer {
-    position: absolute;
-    bottom: 155px;
-    left: 725px;
-}
-
-#headerSubText {
-    color: #4A375A;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: absolute;
+    position: relative;
+    left: 350px;
+    top: 25px;
 }
 
 .Text {
@@ -126,6 +112,12 @@ body {
     position: absolute;
     left: 30px;
     top: 120px;
+}
+
+#secret
+{
+    position: relative;
+    top: 800px;
 }
 
 /* Responsywność: dla ekranów mniejszych niż 768px */
