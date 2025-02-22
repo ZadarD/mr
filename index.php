@@ -10,9 +10,8 @@
         <header>
             <div class="headerContainer">
                 <div id="headerImageContainer">
-                    <img onclick="window.location.href='index.html'" id="headerImage" src="Assets/Images/headerImage.png" alt="">
+                    <img onclick="window.location.href='index.php'" id="headerImage" src="Assets/Images/headerImage.png" alt="">
                     <h1 id="headerText">Maja Reference</h1>
-                    <a href="login.php" style="position: absolute; right: 200px;">Zaloguj</a>
                     <script src="Scripts/image.js"></script>
                 </div>
             </div>
@@ -30,6 +29,10 @@
                 <h1>Wiki którą widzisz jest projektem udokumentowania uniwersum pewnej osoby...</h1>
                 <hr>
                 <h3>Spis treści : </h3>
+
+                <?php
+
+                ?>
             </section>
         </div>
 </html>
