@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+:root 
+{
+    --background-color: #F5E6DA;
+    --header-background-color1: #D8BFD8;
+    --header-background-color2: #b193e1;
+    --header-image-border-color: #F4C2C2;
+    --header-image-border-color-hover1: #D1E7E0;
+    --header-image-border-color-hover2: #C3B1E1;
+    --header-background-button-color1: #C3B1E1;
+    --header-background-button-color2: #D8BFD8;
+    --header-background-button-hover: #D8BFD8;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+body 
+{
+    background: var(--background-color);
+    margin: 0px;
+}
+
+#headerimagecontainer
+{
+    position: fixed;
+    background: linear-gradient(to right, var(--header-background-color1), var(--header-background-color2));
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+#headerimage
+{
+    height: 15vh;
+    border-radius: 50%;
+    border: 5px solid var(--header-image-border-color);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin-left: 25vw;
+}
+
+#headerimage:hover
+{
+    height: 17vh;
+    margin-left: 24.7vw;
+    border-radius: 50%;
+    border: 5px solid var(--header-image-border-color-hover1);
+}
+
+#headerimagelabel
+{
+    font-family: DynaPuff;
+    color: #4A375A;
+    font-size: 50px;
+    padding: 50px;
+}
+
+#menubutton
+{
+    font-family: DynaPuff;
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    height: fit-content;
+    width: fit-content;
+    font-size: x-large;
+    background: #C3B1E1;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #4A375A;
+    border: none;
+    cursor: pointer;
+}
+
+#menubutton:hover
+{
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#sidepanelcontainer
+{
+    font-family: DynaPuff;
+    font-size: medium;
+    color: #4A375A;
+    position: absolute;
+    right: -250px;
+    text-align: center;
+    height: 100vh;
+    width: 250px;
+    background: linear-gradient(to bottom, var(--header-background-color1), var(--header-background-color2));
+}
